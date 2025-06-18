@@ -47,6 +47,16 @@ const homeContent = content[0];
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    background-color: white !important;
+  }
+
+  /* Force white background on everything that might show gray */
+  html {
+    background-color: white !important;
+  }
+
+  body {
+    background-color: white !important;
   }
 
   .homepage {
@@ -148,17 +158,34 @@ const homeContent = content[0];
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
+    html, body {
+      background-color: white !important;
+      height: 100%;
+      min-height: 100vh;
+    }
+
+    .homepage {
+      min-height: 100vh;
+      background-color: white !important;
+    }
+
     .homepage-grid {
       grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
+      grid-template-rows: 50vh 50vh;
+      min-height: 100vh;
+      height: 100vh;
+      background-color: white !important;
     }
 
     .statement-section {
+      height: 50vh;
       min-height: 50vh;
     }
 
     .description-section {
+      height: 50vh;
       min-height: 50vh;
+      background-color: white !important;
     }
 
     .spacer-section {
@@ -172,10 +199,14 @@ const homeContent = content[0];
     .statement-content {
       padding-left: var(--space-6);
       padding-right: var(--space-6);
+      padding-top: var(--space-6);
     }
 
     .description-section {
-      padding: var(--space-6);
+      padding-left: var(--space-6);
+      padding-right: var(--space-6);
+      padding-top: var(--space-6);
+      padding-bottom: var(--space-6);
     }
 
     .description-content {

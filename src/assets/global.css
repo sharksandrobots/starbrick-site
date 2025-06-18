@@ -123,7 +123,7 @@
     --colors-interaction-disabled: var(--color-gray-500);
     --colors-surface-accent: var(--color-starbrickyellow-bold);
     --colors-surface-neutral: var(--color-white);
-    --colors-surface-primary: var(--color-gray-100);
+    --colors-surface-primary: var(--color-white);
     --colors-surface-secondary: var(--color-gray-200);
     --colors-surface-inverse: var(--color-gray-900);
     --colors-text-accent: var(--color-starbrickyellow-bold);
